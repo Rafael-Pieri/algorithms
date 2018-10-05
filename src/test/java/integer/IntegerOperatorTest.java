@@ -3,6 +3,9 @@ package integer;
 import exception.NullArgumentException;
 import org.junit.Test;
 
+import java.util.Arrays;
+import java.util.List;
+
 import static org.junit.Assert.assertEquals;
 
 public class IntegerOperatorTest {
@@ -59,5 +62,13 @@ public class IntegerOperatorTest {
     public void shouldThrowAnExceptionWhenNoValueIsProvided() {
         final IntegerOperator integerOperator = new IntegerOperator();
         integerOperator.mergeValues(null, null);
+    }
+
+    @Test
+    public void shouldGetPositionOfTheBitsEqualToOne() {
+        final IntegerOperator integerOperator = new IntegerOperator();
+        final List<Integer> bits = integerOperator.getPositionOfTheBitsEqualToOne(51);
+
+        assertEquals(Arrays.asList(4, 1, 2, 5, 6), bits);
     }
 }

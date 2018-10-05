@@ -6,12 +6,12 @@ public class BinaryTreeOperator {
 
     private BinaryTree binaryTree;
 
-    public BinaryTreeOperator(BinaryTree binaryTree) {
+    BinaryTreeOperator(final BinaryTree binaryTree) {
         isBinaryTreeProvided(binaryTree);
         this.binaryTree = binaryTree;
     }
 
-    private void isBinaryTreeProvided(BinaryTree binaryTree) {
+    private void isBinaryTreeProvided(final BinaryTree binaryTree) {
         if (binaryTree == null) {
             throw new NullArgumentException("Binary Tree could not be null");
         }
@@ -21,7 +21,7 @@ public class BinaryTreeOperator {
         return sum(binaryTree);
     }
 
-    private Integer sum(BinaryTree binaryTree) {
+    private Integer sum(final BinaryTree binaryTree) {
         if (binaryTree == null) {
             return 0;
         }

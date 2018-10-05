@@ -8,11 +8,11 @@ public class BinaryTree {
 
     private BinaryTree left;
 
-    public BinaryTree(Integer value) {
+    BinaryTree(final Integer value) {
         this.value = value;
     }
 
-    public BinaryTree(Integer value, BinaryTree right, BinaryTree left) {
+    BinaryTree(final Integer value, final BinaryTree right, final BinaryTree left) {
         this.value = value;
         this.right = right;
         this.left = left;

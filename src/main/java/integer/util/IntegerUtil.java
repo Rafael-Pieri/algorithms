@@ -6,7 +6,7 @@ public class IntegerUtil {
 
     }
 
-    public static Integer[] convertToArray(Integer value) {
+    public static Integer[] convertToArray(final Integer value) {
         if (value == null) return new Integer[0];
 
         final String stringValue = Integer.toString(value);
@@ -20,7 +20,7 @@ public class IntegerUtil {
         return arrayIntegers;
     }
 
-    public static String convertArrayToString(Integer[] array){
+    public static String convertArrayToString(final Integer[] array){
         final StringBuilder builder = new StringBuilder();
 
         for (Integer currentValue : array) {
