@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/rafael-pieri/algorithms.svg?branch=master)](https://travis-ci.com/rafael-pieri/algorithms)
+
 ## Algorithms
 
 ### Overview 
